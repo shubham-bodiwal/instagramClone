@@ -5,31 +5,33 @@ import {
   StyledStoryText,
   StyledStoryRing,
 } from "./storySection.styled";
-import avatar from "./../../assets/avatar.png";
-import add from "./../../assets/add.png";
+import avatar from "./../../assets/avatar.svg";
+import add from "./../../assets/add.svg";
 
 function StorySection() {
   return (
-    <StyledStoryList>
-      <StyledStoryContainer>
-        <StyledStoryImage>
-          <img src={avatar} alt="story1" />
-          <img src={add} alt="add story"/>
-        </StyledStoryImage>
-        <StyledStoryText> Your Story</StyledStoryText>
-      </StyledStoryContainer>
-
-      {[1, 2, 3, 4, 5, 6, 7].map((_, index) => (
-        <StyledStoryContainer key={index}>
+    <div>
+      <StyledStoryList>
+        <StyledStoryContainer>
           <StyledStoryImage>
-            <StyledStoryRing>
-              <img src={avatar} alt="story1" />
-            </StyledStoryRing>
+            <img src={avatar} alt="story1" />
+            <img src={add} alt="add story" />
           </StyledStoryImage>
           <StyledStoryText> Your Story</StyledStoryText>
         </StyledStoryContainer>
-      ))}
-    </StyledStoryList>
+
+        {[1, 2, 3, 4, 5, 6, 7].map((_, index) => (
+          <StyledStoryContainer key={index}>
+            <StyledStoryImage>
+              <StyledStoryRing>
+                <img src={avatar} alt="story1" />
+              </StyledStoryRing>
+            </StyledStoryImage>
+            <StyledStoryText> Your Story</StyledStoryText>
+          </StyledStoryContainer>
+        ))}
+      </StyledStoryList>
+    </div>
   );
 }
 

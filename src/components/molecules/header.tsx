@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import like from "../../assets/like.svg";
 import post from "../../assets/posts.svg";
 import send from "../../assets/send.svg";

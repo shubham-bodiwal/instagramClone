@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import storyRing from "./../../assets/storyRing.png";
+import storyRing from "./../../assets/storyRing.svg";
 
 export const StyledStoryList = styled.div`
   overflow-y: scroll;
@@ -52,6 +52,4 @@ export const StyledStoryText = styled.span`
   font-size: 12px;
 `;
 
-export const StyledStoryRing = styled.div`
-background-image
-`;
+export const StyledStoryRing = styled.div``;
